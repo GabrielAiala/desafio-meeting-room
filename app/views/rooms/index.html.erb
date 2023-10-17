@@ -1,0 +1,21 @@
+<!-- FILEPATH: /home/gabriel/Documents/Projects/meetingroom/app/views/rooms/index.html.erb -->
+
+<h1>Rooms</h1>
+
+<%= link_to "Create Room", new_room_path, class: "btn btn-primary mb-3" %>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @rooms.each do |room| %>
+            <tr>
+                <td><%= room.name %></td>
+    
+            </tr>
+        <% end %>
+    </tbody>
+</table>

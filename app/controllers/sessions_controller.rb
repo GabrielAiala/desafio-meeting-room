@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       log_in user
       puts "params: #{params}"
-      redirect_to users_path
+      redirect_to rooms_path
     else
       render 'new'
     end
