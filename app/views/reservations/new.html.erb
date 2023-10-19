@@ -1,0 +1,12 @@
+<%= form_for @reservation do |f| %>
+    <%= f.label :start_time %>
+    <%= f.datetime_local_field :start_time %>
+
+    <%= f.label :end_time %>
+    <%= f.datetime_local_field :end_time %>
+
+    <%= f.label :room_id %>
+    <%= f.collection_select :room_id, Room.all, :id, :name %>
+
+    <%= f.submit %>
+<% end %>
