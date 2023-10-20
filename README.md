@@ -1,24 +1,20 @@
-# README
+Pré-requisitos
+Certifique-se de que você tenha o seguinte software instalado em seu sistema:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby 3.14
+Ruby on Rails 7.0.7
 
-Things you may want to cover:
+Crie o banco de dados e execute as migrações:
 
-* Ruby version
+rode
+rails db:create
+rails db:migrate
 
-* System dependencies
+Executar os Testes
+bundle exec rspec
 
-* Configuration
+Iniciando o Servidor
+rails server
+Acesse a aplicação em seu navegador http://localhost:3000.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+esta hospedado em https://tranquil-stream-06304-a9b6c92eacf6.herokuapp.com/
