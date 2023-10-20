@@ -14,7 +14,12 @@ class ReservationsController < ApplicationController
       render :new
     end
   end
-  
+
+  def index
+    @reservations = Reservation.where(user_id: current_user.id, start_time: Time.now.beginning_of_month..Time.now.end_of_month.end_of_week)
+    
+  end
+
   private
   
   def reservation_params

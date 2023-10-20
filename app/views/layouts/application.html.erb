@@ -12,12 +12,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <main>
+  <body class="">
     <% unless controller_name == 'sessions' %>
       <%= render 'shared/header' %>
     <% end%>
-      <%= yield %>
-    </main>
+    <%= yield %>
   </body>
 </html>
