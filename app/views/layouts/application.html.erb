@@ -13,7 +13,7 @@
   </head>
 
   <body class="">
-    <% unless controller_name == 'sessions' %>
+    <% unless controller_name == 'sessions' || (controller_name == 'users') %>
       <%= render 'shared/header' %>
     <% end%>
     <%= yield %>
